@@ -1,0 +1,140 @@
+body {
+  background-color: rgb(230, 234, 240);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-family: 'Lato', sans-serif;
+}
+.title {
+  font-size: 1.1rem;
+}
+
+
+.container h4 {
+  margin-bottom: 2px;
+  font-size: 0.85rem;
+}
+
+.balance {
+  margin-top: 2px;
+  font-size: 1.2rem;
+}
+
+.income-expense {
+  padding: 5px 0;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 2px;
+}
+
+.income, .expense {
+  width: 180px;
+  text-align: center;
+}
+
+.line {
+  width: 1px;
+  background-color: rgb(165, 165, 165);
+  height: 70px;
+}
+.income h4, .expense h4 {
+  font-size: 0.9rem;
+  margin-bottom: 4px;
+}
+
+.income h3 {
+  margin-top: 2px;
+  font-size: 1.2rem;
+  color: rgb(52, 194, 52);
+}
+
+.expense h3 {
+  margin-top: 2px;
+  font-size: 1.2rem;
+  color: red;
+}
+
+.history {
+  font-size: 0.95rem;
+  border-bottom: 1px solid gray;
+  padding-bottom: 5px;
+}
+
+.list {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 40px;
+}
+
+.list li {
+  background-color: #fff;
+  box-shadow: var(--box-shadow);
+  color: #333;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.list li.minus {
+  border-right: 5px solid #c0392b;
+}
+
+.list li.plus {
+  border-right: 5px solid #2ecc71;
+}
+
+.delete-btn {
+  cursor: pointer;
+  background-color: #e74c3c;
+  border: 0;
+  color: #fff;
+  font-size: 20px;
+  padding: 2px 4px;
+  padding-left: 7px;
+  padding: 2px 5px;
+  position: absolute;
+  top: 50%;
+  left: -6px;
+  transform: translate(-100%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.list li:hover .delete-btn {
+  opacity: 1;
+}
+
+form h5 {
+  margin-bottom: 3px;
+  font-size: 14px;
+}
+
+form input {
+  width: 100%;
+  border: 1px solid #dedede;
+  border-radius: 2px;
+  font-size: 16px;
+  padding: 10px;
+  width: 97%;
+  padding-right: 0;
+}
+form div {
+  margin-bottom: 3px;
+}
+
+form button {
+  width: 100%;
+  text-align: center;
+  padding: 7px 0px;
+  color: white;
+  cursor: pointer;
+  background-color: #9c88ff;
+  padding: 10px;
+  font-size: 16px;
+  margin: 10px 0 30px;
+  border: none;
+}
